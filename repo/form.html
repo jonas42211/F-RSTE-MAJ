@@ -1,0 +1,35 @@
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <link rel="shortcut icon" href="assets/img/download.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/form.css">
+    <script src="assets/java/side.js" defer></script>
+</head>
+<body>
+    <form action="#" method="post">
+        <label for="name" class="name">Navn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email" class="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="nummer" class="nummer">Telefonnummer:</label>
+        <input type="tel" id="nummer" name="nummer" required>
+
+        <label for="bemærkninger" class="bemærkninger">Bemærkninger:</label>
+        <textarea name="bemærkninger" id="bemærkninger"></textarea>
+        <label for="arrangement" class="arrangement">vælg Arrangement:</label>
+        <select name="arrangement" id="arrangement">
+            <option value="">Vælg et arrangement</option>
+            <option value="arrangement1">Arrangement 1</option>
+            <option value="arrangement2">Arrangement 2</option>
+            <option value="arrangement3">Arrangement 3</option>
+        </select>
+
+        <input id="submit" type="submit" value="Send">
+    </form>
+    <div id="form-feedback" aria-live="polite"></div>
+</body>
+</html>
